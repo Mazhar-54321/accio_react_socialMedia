@@ -1,0 +1,34 @@
+.home-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: #ddd;
+    height: 100%;
+    input{
+        padding: 10px;
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 8px;
+        outline: none;
+    }
+    
+    .arrow{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #F05A22;
+        border-radius: 5px;
+        color: white;
+    }
+    .read-more{
+        cursor: pointer;
+        color: Red;
+    }
+    .description-insight{
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+    }
+}
