@@ -10,7 +10,8 @@ body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: left;
   padding: 0px;
-  margin: 0px
+  margin: 0px;
+  overflow-x: hidden;
 }
 .post-container{
   display: flex;
@@ -31,5 +32,20 @@ body{
   background-color: white;
   img{
       height: 70%;
+  }
+}
+@media (max-width:600px){
+  .body{
+    overflow-x: hidden;
+  }
+  .post-container{
+    max-width: 98% !important;
+  }
+  .post{
+    width: 90% !important;
+     
+  }
+  .image-container{
+    width: 100% !important;
   }
 }

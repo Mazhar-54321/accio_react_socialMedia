@@ -31,13 +31,14 @@ const Item = () => {
   return (
     <div className='item-container'>
       <div className='navigate'>
-        <span onClick={()=>{navigate("/",{replace:true})}} style={{cursor:'pointer', width:'20px',height:'20px',textAlign:'center', display:'inline-block', backgroundColor:'white',color:'black',borderRadius:'50%',padding:'5px'}}>&#8592;
+        <span onClick={()=>{navigate("/",{replace:true})}} style={{cursor:'pointer',
+           width:'20px',height:'20px',textAlign:'center', display:'inline-block', backgroundColor:'white',color:'black',borderRadius:'50%',padding:'5px'}}>&#8592;
         </span>
         <h2>Post Number {id}</h2>
         
       </div>
       {<div className='post-info'>
-        <div style={{width:'30%',height:'100%',position:'relative'}}>
+        <div className='image-container' style={{width:'30%',height:'100%',position:'relative'}}>
         <img src={`https://picsum.photos/200?random=${id}`} style={{width:'100%',height:'100%',objectFit:'cover',borderRadius:'12px',backgroundColor:'white',position:'relative'}} />
         <span style={{position:'absolute',display:'inline-block', bottom:'0px',color:'white', right:'10px'}} >
           
@@ -46,6 +47,7 @@ const Item = () => {
         <span style={{position:'absolute',display:'inline-block', bottom:'0px',color:'white', right:'50px'}}>
            <AiOutlineHeart style={{width:'24px',height:'24px',}} />
         </span>
+        <span style={{position:'absolute',bottom:'0px',left:'0px',color:'white',padding:'10px',wordWrap:'break-word',width:'150px'}}>{state?.currentPost?.title}</span>
         </div>
         
          <div className='activity' style={{width:'60%'}}>
@@ -56,7 +58,7 @@ const Item = () => {
           <p>{state?.currentActivity==='userId'&&'Post was posted by '}{state?.currentPost?.[state?.currentActivity]}</p>
          </div>
         
-         <span style={{position:'absolute',bottom:'0px',left:'0px',color:'white',padding:'10px',wordWrap:'break-word',width:'150px'}}>{state?.currentPost?.title}</span>
+         
         
       
         </div>}

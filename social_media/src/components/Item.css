@@ -46,3 +46,28 @@
         padding: 8px 24px;
     }
 }
+@media (max-width:600px){
+    
+    .navigate{
+        width: 100%;
+    }
+    h2{
+        font-size: 16px;
+        width: auto;
+    }
+    .item-container{
+        width: 95% !important;
+    }
+    .post-info{
+        flex-direction: column;
+        height: auto;
+    }
+    .image-container{
+        width: 100% !important;
+    }
+    .activity{
+        width: 100% !important;
+        margin: 20px;
+        height: auto;
+    }
+}

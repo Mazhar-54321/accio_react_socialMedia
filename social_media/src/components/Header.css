@@ -22,6 +22,11 @@
     width: 300px;
     color: black;
   }
+  @media (max-width:600px){
+    .posts-container{
+      display: none;
+    }
+  }
   
   
   
